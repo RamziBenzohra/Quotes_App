@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/fullscreendialog"
+    android:background="@android:color/white"
+   >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/table"
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center|end"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="اضافة أقتباس "
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/toolbar_title"
+                android:textStyle="bold"
+
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageView"
+                android:layout_width="@dimen/profile_iv_w_h"
+                android:layout_height="@dimen/profile_iv_w_h"
+                android:layout_marginLeft="@dimen/profile_iv_margin_l_r"
+                android:layout_marginEnd="@dimen/profile_iv_margin_l_r"
+                android:src="@drawable/image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/table" />
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/dialog_add_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/add_fab_margin_start"
+            android:layout_marginTop="@dimen/fab_margin_top"
+            app:backgroundTint="@android:color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_add_black_24dp"
+            app:fabSize="mini"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/table" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/delete_quote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/add_fab_margin_start"
+            android:layout_marginTop="@dimen/fab_margin_top"
+            android:clickable="true"
+            android:focusable="true"
+            app:backgroundTint="@android:color/white"
+            android:src="@drawable/ic_delete_black_24dp"
+            app:fabSize="mini"
+            app:layout_constraintStart_toEndOf="@+id/dialog_add_fab"
+            app:layout_constraintTop_toTopOf="@+id/table" />
+
+        <EditText
+            android:id="@+id/etd_discription"
+
+            style="@style/etd_add_disc"
+
+            android:background="@drawable/input_quotes_bg"
+
+            android:hint="ادخل الوصف"
+            android:inputType="textPersonName"
+            android:lineHeight="5dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.78"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_add_fab" />
+
+
+        <ImageView
+            android:id="@+id/quotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/qoutes_image_margin_top"
+            android:layout_marginBottom="@dimen/qoutes_image_margin_bottom"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:src="@drawable/ic_add_black_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etd_discription" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="@dimen/progress_w_h"
+            android:layout_height="@dimen/progress_w_h"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/table"
+            android:layout_marginStart="@dimen/add_fab_margin_start"
+            android:layout_marginTop="@dimen/progress_margin_top_second"/>
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
+
+

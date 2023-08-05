@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="Fragments.InfoFragment"
+    android:background="@android:color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cover2"
+            android:adjustViewBounds="true"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/info_linear_padding">
+            <TextView
+                style="@style/viewParent.headerText"
+                android:layout_gravity="end"
+                android:text="حول التطبيق" />
+            <android.support.v7.widget.CardView
+                style="@style/info_card_style"
+                app:cardBackgroundColor="#fafafa"
+                app:contentPadding="@dimen/info_card_content_pandding"
+                >
+                <TextView
+                    android:id="@+id/first_info"
+                    style="@style/viewParent.headerText.settingsMiniTitle"
+                    android:text="صفحة أجتماعية هادفة عامة تسعى لنشر وجمع أقوال العظماء عبر التاريخ حتى يومنا هذا . "
+                    android:autoLink="all"
+                    android:autoSizeTextType="uniform"
+                    android:textColor="@android:color/black"
+                    android:drawableRight="@drawable/ic_info_outline_black_20dp"
+                    android:textColorLink="@android:color/holo_blue_dark"
+                    />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                style="@style/info_card_style"
+                app:cardBackgroundColor="#fafafa"
+                app:contentPadding="@dimen/info_card_content_pandding">
+                <TextView
+                    android:id="@+id/website_info"
+                    style="@style/viewParent.headerText.settingsMiniTitle"
+                    android:text="Https://mini-facts.com"
+                    android:autoLink="all"
+                    android:paddingTop="@dimen/info_text_padding_top"
+                    android:autoSizeTextType="uniform"
+
+                    android:drawableLeft="@drawable/ic_language_black_24dp"
+                    android:textColorLink="@color/blue"
+
+                    />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/info_card_style"
+                app:cardBackgroundColor="#fafafa"
+                app:contentPadding="@dimen/info_card_content_pandding">
+                <TextView
+                    android:id="@+id/phone_info"
+                    style="@style/viewParent.headerText.settingsMiniTitle"
+                    android:text="+213 0558977025"
+                    android:autoLink="all"
+                    android:autoSizeTextType="uniform"
+                    android:paddingTop="@dimen/info_text_padding_top"
+
+                    android:drawableLeft="@drawable/ic_phone_black_24dp"
+                    android:textColorLink="@color/blue"
+                    />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/info_card_style"
+                app:cardBackgroundColor="#fafafa"
+                app:contentPadding="@dimen/info_card_content_pandding">
+                <TextView
+                    android:id="@+id/email_info"
+                    style="@style/viewParent.headerText.settingsMiniTitle"
+                    android:text="contact@mini-facts.com"
+                    android:autoLink="all"
+                    android:paddingTop="@dimen/info_text_padding_top"
+                    android:drawableLeft="@drawable/ic_email_black_24dp"
+                    android:autoSizeTextType="uniform"
+                    android:textColorLink="@color/blue"
+                    />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/info_card_style"
+                app:cardBackgroundColor="#fafafa"
+                app:contentPadding="@dimen/info_card_content_pandding">
+                <TextView
+                    android:id="@+id/face_info"
+                    style="@style/viewParent.headerText.settingsMiniTitle"
+                    android:text="https://www.facebook.com/pg/Aqwal.khldhaaltarikh"
+                    android:autoLink="all"
+                    android:paddingTop="@dimen/info_text_padding_top"
+                    android:drawableLeft="@drawable/facebook_vector"
+                    android:autoSizeTextType="uniform"
+                    android:textColorLink="@color/blue"
+                    />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/info_card_style"
+                app:cardBackgroundColor="#fafafa"
+                app:contentPadding="@dimen/info_card_content_pandding">
+                <TextView
+                    android:id="@+id/inst_info"
+                    style="@style/viewParent.headerText.settingsMiniTitle"
+                    android:text="https://www.instagram.com/aqwal.khldhaaltarikh/"
+                    android:autoLink="all"
+                    android:paddingTop="@dimen/info_text_padding_top"
+                    android:drawableLeft="@drawable/imstegram_vector"
+                    android:autoSizeTextType="uniform"
+                    android:textColorLink="@color/blue"
+                    />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/info_card_style"
+                app:cardBackgroundColor="#fafafa"
+                app:contentPadding="@dimen/info_card_content_pandding">
+                <TextView
+                    android:id="@+id/twit_info"
+                    style="@style/viewParent.headerText.settingsMiniTitle"
+                    android:text="https://twitter.com/AqwalKhldhaaltr"
+                    android:autoLink="all"
+                    android:paddingTop="@dimen/info_text_padding_top"
+                    android:drawableLeft="@drawable/twiter_vector"
+                    android:autoSizeTextType="uniform"
+                    android:textColorLink="@color/blue"
+                    />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/info_card_style"
+                app:cardBackgroundColor="#fafafa"
+                app:contentPadding="@dimen/info_card_content_pandding">
+                <TextView
+                    android:id="@+id/pintr_info"
+                    style="@style/viewParent.headerText.settingsMiniTitle"
+                    android:text="https://www.pinterest.com/Aqwalkhldhaaltarikh"
+                    android:autoLink="all"
+                    android:paddingTop="@dimen/info_text_padding_top"
+                    android:drawableLeft="@drawable/pinterest"
+                    android:autoSizeTextType="uniform"
+                    android:textColorLink="@color/blue"
+                    />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/info_card_style"
+                app:cardBackgroundColor="#fafafa"
+                app:contentPadding="@dimen/info_card_content_pandding">
+                <TextView
+                    android:id="@+id/you_info"
+                    style="@style/viewParent.headerText.settingsMiniTitle"
+                    android:text="https://www.youtube.com/channel/UC20OC1KH85zEtQb65utCMaQ/featured?view_as=subscriber"
+                    android:autoLink="all"
+                    android:paddingTop="@dimen/info_text_padding_top"
+                    android:drawableLeft="@drawable/youtube_vector"
+                    android:autoSizeTextType="uniform"
+                    android:textColorLink="@color/blue"
+                    />
+            </android.support.v7.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/viewParent.headerText"
+                    android:text="Our Story :"
+                    android:layout_marginTop="@dimen/indo_header_text_margin_top"/>
+                <android.support.v7.widget.CardView
+                    style="@style/info_card_style"
+                    app:cardBackgroundColor="#fafafa"
+                    app:contentPadding="@dimen/info_card_content_pandding">
+                    <TextView
+                        android:id="@+id/second_info"
+                        style="@style/viewParent.headerText.settingsMiniTitle"
+                        android:text="نسعى لتوثيق آلاف  المقولات المختلفة في كافة مناحي الحياة الاجتماعية والسياسية والفكرية  والأدبية .. والاهتمام بترجمة الاقتباسات بلغات غير العربية.
+صفحة تهدف الى نشر الوعي والثقافة لكافة فئات المجتمع. من خلال نشر المقولات الأدبية والفكرية والسياسية والاجتماعية والعلمية."
+                        android:autoLink="all"
+                        android:autoSizeTextType="uniform"
+                        android:textColor="@android:color/black"
+                        android:paddingTop="@dimen/info_text_padding_top"
+                        android:drawableRight="@drawable/ic_info_outline_black_20dp"
+                        android:textColorLink="@android:color/black"
+                        />
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

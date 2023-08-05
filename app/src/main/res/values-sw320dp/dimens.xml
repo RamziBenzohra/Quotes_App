@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="headerTextSize">25sp</dimen>
+    <!--//timeline-->
+    <dimen name="table_layout_marginTop">7dp</dimen>
+    <dimen name="timer_h_w">25dp</dimen>
+    <dimen name="timer_margin_left">19dp</dimen>
+    <dimen name="timer_margin_top_buttom">7dp</dimen>
+    <dimen name="date_tv_margin_left_top">10dp</dimen>
+    <dimen name="line_width">1dp</dimen>
+    <dimen name="line_one_height">15dp</dimen>
+    <dimen name="view_margin_start">33dp</dimen>
+    <dimen name="view_margin_top">2dp</dimen>
+    <dimen name="time_tv_margin_start">12dp</dimen>
+    <dimen name="timer_tv_textsize">15sp</dimen>
+    <dimen name="profile_iv_w_h">40dp</dimen>
+    <dimen name="profile_iv_margin_start">14dp</dimen>
+    <dimen name="linear_margin_start">4dp</dimen>
+    <dimen name="linear_margin_top">24dp</dimen>
+    <dimen name="linear_margin_end">8dp</dimen>
+    <dimen name="disc_margin_top">5dp</dimen>
+    <dimen name="image_margin_top">24dp</dimen>
+    <dimen name="progress_w_h">30dp</dimen>
+    <!--///activity_confirm_email_and_phone-->
+    <dimen name="toolbar_title">15sp</dimen>
+    <dimen name="send_code_tv_textsize">15sp</dimen>
+    <dimen name="sendècode_tv_margintop">16dp</dimen>
+    <dimen name="send_code_tv_padding">15dp</dimen>
+    <dimen name="etd_conf_email_margin_start">32dp</dimen>
+    <dimen name="etd_conf_email_margin_top">16dp</dimen>
+    <dimen name="etd_conf_email_margin_end">32dp</dimen>
+    <dimen name="_padding">10dp</dimen>
+    <dimen name="etd_conf_email_textsize">15sp</dimen>
+    <dimen name="btn_conf_email_margin_top">16dp</dimen>
+    <dimen name="btn_conf_email_padding">10dp</dimen>
+    <dimen name="btn_conf_email_textsize">15sp</dimen>
+    <!--activity_intro-->
+    <dimen name="intro_view_margin_end">24dp</dimen>
+    <dimen name="intro_title_margin_bottom">8dp</dimen>
+    <dimen name="panel_tv_margin_bottom">32dp</dimen>
+    <dimen name="intro_btn_margin_s_e">16dp</dimen>
+    <dimen name="intro_sign_in_margin_bottom">24dp</dimen>
+    <dimen name="intro_padd">10dp</dimen>
+    <dimen name="text_size">15sp</dimen>
+    <dimen name="create_new_margin_bottom">80dp</dimen>
+    <dimen name="profile_iv_margin_l_r">10dp</dimen>
+    <!--main_activity-->
+    <dimen name="add_fab_margin_end">5dp</dimen>
+    <dimen name="add_fab_margin_start">15dp</dimen>
+    <dimen name="disc_fab_margin_start">65dp</dimen>
+    <dimen name="fab_elevation">7dp</dimen>
+    <dimen name="tab_min_width">30dp</dimen>
+    <!--profile_activity-->
+    <dimen name="profile_pic_h_w">110dp</dimen>
+    <dimen name="user_name_tv_margin_top">8dp</dimen>
+    <dimen name="user_name_padding">5dp</dimen>
+    <dimen name="user_name_text_size">24sp</dimen>
+    <dimen name="profile_linear_margin_top">8dp</dimen>
+    <dimen name="fab_title_tv_margin_top">3dp</dimen>
+    <dimen name="fab_title_tv_textsize">13sp</dimen>
+    <dimen name="email_tv_h">50dp</dimen>
+    <dimen name="email_tv_margin_s_e">16dp</dimen>
+    <dimen name="email_tv_margin_top">8dp</dimen>
+    <dimen name="email_tv_margin_bottom">32dp</dimen>
+    <dimen name="drawable_padding">10dp</dimen>
+    <dimen name="email_tv_padding">5dp</dimen>
+    <dimen name="email_tv_textsize">14sp</dimen>
+    <!--activity_sign_in-->
+    <dimen name="sign_well_text_size">20sp</dimen>
+    <dimen name="etd_sign_in_h">45dp</dimen>
+    <dimen name="etd_sign_in_s_e_b">16dp</dimen>
+    <dimen name="etd_sign_text_size">15sp</dimen>
+    <dimen name="etd_sign_padding_s_e">17dp</dimen>
+    <dimen name="etd_sign_padding_t_b">5dp</dimen>
+    <dimen name="btn_sign_margin_b">35dp</dimen>
+    <!--intro layout-->
+    <dimen name="forget_passweer_tv_text_size">17sp</dimen>
+    <dimen name="forget_password_margin_bottom">50dp</dimen>
+    <!--activity_update-->
+    <dimen name="update_fab_margin_top">5dp</dimen>
+    <dimen name="update_fab_margin_bottom">12dp</dimen>
+    <dimen name="update_fab_margin_end">16dp</dimen>
+    <dimen name="etd_disc_margin_start">16dp</dimen>
+    <dimen name="etd_disc_margin_top">11dp</dimen>
+    <dimen name="etd_disc_margin_end">16dp</dimen>
+    <dimen name="etd_disc_margin_btn">30dp</dimen>
+    <dimen name="etd_textsize">15sp</dimen>
+    <dimen name="qoutes_image_margin_top">16dp</dimen>
+    <dimen name="progress_margin_top">7dp</dimen>
+    <dimen name="progress_margin_end">15dp</dimen>
+    <dimen name="etd_margin_top">16dp</dimen>
+    <dimen name="update_btn_margin_bottom">40dp</dimen>
+    <dimen name="tv_padding">5dp</dimen>
+    <dimen name="tv_padding_end">15dp</dimen>
+    <dimen name="tv_textsize">15sp</dimen>
+    <dimen name="fab_margin_top">30dp</dimen>
+    <dimen name="qoutes_image_margin_bottom">70dp</dimen>
+    <dimen name="progress_margin_top_second">32dp</dimen>
+    <!--fragment_info-->
+    <dimen name="linear_info_padding">15dp</dimen>
+    <dimen name="linear_info_padding_bottom">5dp</dimen>
+    <!--info update-->
+    <dimen name="etds_h">60dp</dimen>
+    <dimen name="etds_padding">5dp</dimen>
+    <dimen name="card_margin_top">15dp</dimen>
+    <!--empty favorite-->
+    <dimen name="empty_image_h_w">120dp</dimen>
+    <dimen name="empty_image_margin_bottom">32dp</dimen>
+    <dimen name="empty_textsize">23sp</dimen>
+    <dimen name="empty_small_img_h_w">17dp</dimen>
+    <dimen name="empty_small_img_margin_top">2dp</dimen>
+    <dimen name="empty_small_img_margin_end">4dp</dimen>
+    <!--fragment info-->
+    <dimen name="info_linear_padding">15dp</dimen>
+    <dimen name="card_maegin_top">5dp</dimen>
+    <dimen name="item_text_size">13sp</dimen>
+    <dimen name="info_card_content_pandding">10dp</dimen>
+    <dimen name="info_text_padding_top">5dp</dimen>
+    <dimen name="indo_header_text_margin_top">20dp</dimen>
+    <!--fragment settings-->
+    <dimen name="setting_spinner_h">50dp</dimen>
+
+    <!--gallert_item-->
+    <dimen name="gallert_item_fab_margin_s_t">4dp</dimen>
+    <!--Native add-->
+    <dimen name="native_add_icon_margin_end">20dp</dimen>
+    <dimen name="native_add_tv_padding">10dp</dimen>
+    <!--password update dialog-->
+    <dimen name="pass_update_dialog_margin_top">60dp</dimen>
+    <dimen name="etd_margin_top_15dp">15dp</dimen>
+    <!--image model padding-->
+    <dimen name="image_model_padding">5dp</dimen>
+    <dimen name="date_tv_text_size">15sp</dimen>
+    <dimen name="update_pass_btn_text_size">17dp</dimen>
+    <dimen name="tv_textsize_2">19dp</dimen>
+    <dimen name="card_text_size">23sp</dimen>
+    <dimen name="ad_text_size">21dp</dimen>
+    <dimen name="sign_btn_text_size">19dp</dimen>
+
+
+</resources>

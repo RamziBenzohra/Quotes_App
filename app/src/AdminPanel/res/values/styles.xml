@@ -1,0 +1,95 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="toolbartheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+    <!--styles for setting fragments-->
+    <style name="viewParent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="etd_input_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/etd_sign_in_h</item>
+        <item name="android:layout_marginStart">@dimen/etd_sign_in_s_e_b</item>
+        <item name="android:layout_marginEnd">@dimen/etd_sign_in_s_e_b</item>
+        <item name="android:layout_marginBottom">@dimen/etd_sign_in_s_e_b</item>
+        <item name="android:textSize">@dimen/etd_sign_text_size</item>
+        <item name="android:paddingStart">@dimen/etd_sign_padding_s_e</item>
+        <item name="android:paddingTop">@dimen/etd_sign_padding_t_b</item>
+        <item name="android:paddingEnd">@dimen/etd_sign_padding_s_e</item>
+        <item name="android:paddingBottom">@dimen/etd_sign_padding_t_b</item>
+        <item name="android:drawablePadding">@dimen/drawable_padding</item>
+    </style>
+    <style name="etd_add_disc">
+
+        <item name="android:layout_marginStart">@dimen/etd_disc_margin_start</item>
+        <item name="android:layout_marginTop">@dimen/etd_disc_margin_end</item>
+        <item name="android:layout_marginEnd">@dimen/etd_disc_margin_end</item>
+        <item name="android:textSize">@dimen/etd_textsize</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorHint">@android:color/black</item>
+        <item name="android:layout_marginBottom">@dimen/etd_disc_margin_btn</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/etd_sign_in_h</item>
+    </style>
+    <style name="info_card_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:layout_marginTop">@dimen/card_maegin_top</item>
+    </style>
+    <style name="settings_card_style">
+        <item name="android:layout_marginTop">@dimen/card_maegin_top</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="viewParent.headerText">
+        <item name="android:textColor">@color/contentTextColor</item>
+        <item name="android:textSize">@dimen/headerTextSize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="viewParent.IntroheaderText">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/headerTextSize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="viewParent.headerText.settingsMiniTitle">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/item_text_size</item>
+        <item name="android:drawablePadding">@dimen/drawable_padding</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="settingsText" parent="viewParent.headerText.settingsMiniTitle">
+        <item name="android:textColor">@color/miniTitle</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">@dimen/drawable_padding</item>
+
+    </style>
+    <style name="viewParent.headerText.settingsTextIcon" parent="settingsText">
+
+        <item name="android:clickable">false</item>
+        <item name="android:textSize">@dimen/card_text_size</item>
+    </style>
+    <style name="fullscreendialog" parent="Theme.AppCompat.Light.DialogWhenLarge">
+        <item name="windowNoTitle">true</item>
+        <item name="android:gravity">top</item>
+        <item name="android:dropDownHeight">0dp</item>
+        <item name="actionBarSize">0dp</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Design.BottomSheetDialog</item>
+    </style>
+
+</resources>

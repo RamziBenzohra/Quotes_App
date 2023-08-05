@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Activities.ProfileActivity">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:elevation="@dimen/fab_elevation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:titleTextColor="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="serif-monospace"
+                    android:text="الحساب الشخصي"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/toolbar_title"
+                    android:textStyle="bold" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileImageView"
+                    android:layout_width="@dimen/profile_iv_w_h"
+                    android:layout_height="@dimen/profile_iv_w_h"
+                    android:layout_gravity="center"
+
+                    android:layout_margin="@dimen/profile_iv_margin_l_r"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="@drawable/image" />
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/cover2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/propic"
+                    android:layout_width="@dimen/profile_pic_h_w"
+                    android:layout_height="@dimen/profile_pic_h_w"
+
+                    android:src="@drawable/image"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView3"
+                    app:layout_constraintStart_toStartOf="@+id/imageView3"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/change_prpic_fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_photo_camera_black_24dp"
+                    app:backgroundTint="@android:color/white"
+                    app:fabSize="mini"
+                    app:layout_constraintBottom_toBottomOf="@+id/propic"
+                    app:layout_constraintEnd_toEndOf="@+id/propic"
+                    app:layout_constraintTop_toTopOf="@+id/propic"
+                    app:layout_constraintVertical_bias="1.0" />
+                <TextView
+                    android:id="@+id/name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/user_name_tv_margin_top"
+                    android:fontFamily="serif-monospace"
+                    android:padding="@dimen/user_name_padding"
+                    android:text="User Name"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/user_name_text_size"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/propic"
+                    app:layout_constraintStart_toStartOf="@+id/propic"
+                    app:layout_constraintTop_toBottomOf="@+id/propic" />
+
+                <LinearLayout
+                    android:id="@+id/lin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/profile_linear_margin_top"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/name_tv">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/delete_fab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/gray_with"
+                            android:src="@drawable/ic_delete_black_24dp"
+                            app:backgroundTint="@android:color/white"
+                            app:elevation="@dimen/fab_elevation"
+                            app:fabSize="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/fab_title_tv_margin_top"
+                            android:text="حذف الحساب"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/fab_title_tv_textsize"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/confirm_fab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/gray_with"
+                            android:src="@drawable/ic_check_black_24dp"
+                            app:backgroundTint="@android:color/white"
+                            app:elevation="@dimen/fab_elevation"
+                            app:fabSize="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/fab_title_tv_margin_top"
+                            android:gravity="center"
+                            android:text="تأكيد الاميل"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/fab_title_tv_textsize"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/change_pass_fab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/gray_with"
+                            android:src="@drawable/ic_edit_password"
+                            app:backgroundTint="@android:color/white"
+                            app:elevation="@dimen/fab_elevation"
+                            app:fabSize="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/fab_title_tv_margin_top"
+                            android:text="تغيير كلمة المرور"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/fab_title_tv_textsize"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/sign_out_fab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/gray_with"
+                            android:src="@drawable/ic_logout"
+                            app:backgroundTint="@android:color/white"
+                            app:elevation="@dimen/fab_elevation"
+                            app:fabSize="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/fab_title_tv_margin_top"
+                            android:gravity="center"
+                            android:text="تسجيل الخروج"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/fab_title_tv_textsize"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lin2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lin">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/update_profile_fab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/gray_with"
+                            android:src="@drawable/ic_update_black_24dp"
+                            app:backgroundTint="@android:color/white"
+                            app:elevation="@dimen/fab_elevation"
+                            app:fabSize="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/fab_title_tv_margin_top"
+                            android:text="تغير اسم الحساب"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/fab_title_tv_textsize"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/change_email_fab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/gray_with"
+                            android:src="@drawable/ic_email_black_24dp"
+                            app:backgroundTint="@android:color/white"
+                            app:elevation="@dimen/fab_elevation"
+                            app:fabSize="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/fab_title_tv_margin_top"
+                            android:text="تغيير الاميل"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/fab_title_tv_textsize"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/email_tv_h"
+                    android:layout_marginStart="@dimen/email_tv_margin_s_e"
+                    android:layout_marginTop="@dimen/email_tv_margin_top"
+                    android:layout_marginEnd="@dimen/email_tv_margin_s_e"
+                    android:layout_marginBottom="@dimen/email_tv_margin_bottom"
+                    android:autoLink="all"
+                    android:drawableLeft="@drawable/ic_email_black_24dp"
+                    android:drawablePadding="@dimen/drawable_padding"
+                    android:gravity="center_vertical"
+                   android:padding="@dimen/email_tv_padding"
+                    android:text="UserEmail@gmail.com   Not Verified"
+                    android:textColorLink="@color/blue"
+                    android:textSize="@dimen/email_tv_textsize"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lin2" />
+
+                <ProgressBar
+                    android:id="@+id/upload_progress"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/propic"
+                    app:layout_constraintEnd_toEndOf="@+id/propic"
+                    android:visibility="invisible"
+                    app:layout_constraintStart_toStartOf="@+id/propic"
+                    app:layout_constraintTop_toTopOf="@+id/propic" />
+
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.constraint.ConstraintLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

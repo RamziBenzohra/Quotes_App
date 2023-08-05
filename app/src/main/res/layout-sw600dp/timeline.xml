@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:id="@+id/table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/table_layout_marginTop"
+            android:background="#f2f2f2"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/timer"
+                android:layout_width="@dimen/timer_h_w"
+                android:layout_height="@dimen/timer_h_w"
+                android:layout_marginStart="@dimen/timer_margin_left"
+                android:layout_marginTop="@dimen/timer_margin_top_buttom"
+                android:layout_marginBottom="@dimen/timer_margin_top_buttom"
+                android:src="@drawable/ic_access_time_black_24dp"
+                app:fabSize="mini" />
+
+            <TextView
+                android:id="@+id/date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/date_tv_margin_left_top"
+                android:layout_marginTop="@dimen/date_tv_margin_left_top"
+                android:fontFamily="casual"
+                android:layout_marginBottom="@dimen/date_tv_margin_left_top"
+                android:text="Yesterday"
+                android:textSize="@dimen/date_tv_text_size"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="@dimen/line_width"
+            android:layout_height="@dimen/line_one_height"
+            android:layout_marginStart="@dimen/view_margin_start"
+            android:background="@android:color/black"
+            app:layout_constraintBottom_toTopOf="@+id/delete_iv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/table" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/delete_iv"
+            android:layout_width="@dimen/timer_h_w"
+            android:layout_height="@dimen/timer_h_w"
+            android:layout_marginStart="@dimen/view_margin_start"
+            android:layout_marginTop="@dimen/view_margin_top"
+            android:foreground="?attr/selectableItemBackground"
+            android:src="@drawable/ic_delete_black_24dp"
+            app:layout_constraintBottom_toTopOf="@+id/view3"
+            app:layout_constraintEnd_toEndOf="@+id/view4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="@dimen/line_width"
+            android:layout_height="@dimen/line_one_height"
+            android:layout_marginStart="@dimen/view_margin_start"
+            android:background="@android:color/black"
+            app:layout_constraintBottom_toTopOf="@+id/update_iv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/delete_iv" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/update_iv"
+            android:layout_width="@dimen/timer_h_w"
+            android:layout_height="@dimen/timer_h_w"
+            android:layout_marginStart="@dimen/view_margin_start"
+            android:layout_marginTop="@dimen/view_margin_top"
+            android:foreground="?attr/selectableItemBackground"
+            android:src="@drawable/ic_update_black_24dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/view3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="@dimen/line_width"
+            android:layout_height="@dimen/line_one_height"
+            android:layout_marginStart="@dimen/view_margin_start"
+            android:background="@android:color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/update_iv" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fav_iv"
+            android:layout_width="@dimen/timer_h_w"
+            android:layout_height="@dimen/timer_h_w"
+            android:layout_marginStart="@dimen/view_margin_start"
+            android:layout_marginTop="@dimen/view_margin_top"
+            android:foreground="?attr/selectableItemBackground"
+            android:src="@drawable/ic_favorite_border_black_24dp"
+            app:layout_constraintEnd_toEndOf="@+id/view2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="@dimen/line_width"
+            android:layout_height="@dimen/line_one_height"
+            android:layout_marginStart="@dimen/view_margin_start"
+            android:layout_marginTop="@dimen/view_margin_top"
+            android:background="@android:color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fav_iv" />
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/time_tv_margin_start"
+            android:fontFamily="casual"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="18:35 pm"
+            android:textSize="@dimen/timer_tv_textsize"
+            android:layout_marginTop="@dimen/view_margin_top"
+            app:layout_constraintTop_toBottomOf="@id/line"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="@dimen/line_width"
+            android:layout_height="@dimen/line_one_height"
+            android:layout_marginStart="@dimen/view_margin_start"
+            android:layout_marginBottom="@dimen/view_margin_top"
+            android:background="@android:color/black"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/time_tv" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/picture"
+            android:layout_width="@dimen/profile_iv_w_h"
+            android:layout_height="@dimen/profile_iv_w_h"
+            android:layout_marginStart="@dimen/profile_iv_margin_start"
+            android:layout_marginTop="@dimen/view_margin_top"
+            android:foreground="?attr/selectableItemBackground"
+            android:src="@drawable/image"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="@dimen/line_width"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/view_margin_start"
+            android:layout_marginTop="@dimen/view_margin_top"
+            android:background="@android:color/black"
+            app:layout_constraintBottom_toTopOf="@+id/quotes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/picture" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/linear_margin_start"
+            android:layout_marginTop="@dimen/linear_margin_top"
+            android:layout_marginEnd="@dimen/linear_margin_end"
+            android:background="@drawable/marker"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/picture"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/picture"
+            app:layout_constraintTop_toBottomOf="@+id/view">
+
+            <TextView
+                android:id="@+id/discription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/disc_margin_top"
+                android:autoLink="all"
+                android:fontFamily="casual"
+                android:textSize="@dimen/timer_tv_textsize"
+                android:textColor="@android:color/black"
+                android:textColorLink="@color/colorAccent"
+                android:textStyle="bold"
+                tools:text="الأنسان الناجح يذهب الى عمله و كأنه ذاهب الى موعد غرامي" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/quotes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/image_margin_top"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:src="@drawable/seven"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <ProgressBar
+            android:id="@+id/image_progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="@dimen/progress_w_h"
+            android:layout_height="@dimen/progress_w_h"
+            app:layout_constraintBottom_toBottomOf="@+id/quotes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/quotes" />
+
+        <ProgressBar
+            android:id="@+id/saving_progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="@dimen/progress_w_h"
+            android:layout_height="@dimen/progress_w_h"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/fav_iv"
+            app:layout_constraintStart_toEndOf="@+id/fav_iv"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+        <ProgressBar
+            android:id="@+id/deleting_progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="@dimen/progress_w_h"
+            android:layout_height="@dimen/progress_w_h"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/delete_iv"
+            app:layout_constraintStart_toEndOf="@+id/delete_iv"
+            app:layout_constraintTop_toBottomOf="@+id/view4" />
+    </android.support.constraint.ConstraintLayout>
+
+    </RelativeLayout>
+
+
+

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Activities.IntroActivity"
+    android:background="@drawable/first">
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/image_gradiant"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/viewParent.IntroheaderText"
+        android:layout_marginEnd="@dimen/intro_view_margin_end"
+        android:layout_marginBottom="@dimen/intro_title_margin_bottom"
+        android:text="أقوال خلدها التاريخ"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/viewParent.IntroheaderText"
+        android:layout_marginEnd="@dimen/intro_view_margin_end"
+        android:layout_marginBottom="@dimen/panel_tv_margin_bottom"
+        android:textSize="@dimen/sign_well_text_size"
+        android:text="لوحة التحكم"
+        app:layout_constraintBottom_toTopOf="@+id/intro_sign_in"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/intro_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/intro_btn_margin_s_e"
+        android:layout_marginEnd="@dimen/intro_btn_margin_s_e"
+        android:layout_marginBottom="@dimen/intro_sign_in_margin_bottom"
+        android:background="@drawable/create_btn_bg"
+        android:clickable="true"
+        android:enabled="true"
+        android:focusable="true"
+        android:foreground="?selectableItemBackground"
+        android:padding="@dimen/intro_padd"
+        android:text="تسجيل الدخول "
+        android:textSize="@dimen/text_size"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/intro_create_new"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/intro_create_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/intro_btn_margin_s_e"
+        android:layout_marginEnd="@dimen/intro_btn_margin_s_e"
+        android:layout_marginBottom="@dimen/create_new_margin_bottom"
+        android:background="@drawable/create_btn_bg"
+        android:clickable="true"
+        android:enabled="true"
+        android:focusable="true"
+        android:foreground="?selectableItemBackground"
+        android:padding="@dimen/intro_padd"
+        android:text="فتح حساب جديد"
+android:textSize="@dimen/text_size"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

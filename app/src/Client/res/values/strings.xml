@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">أقوال خلدها التاريخ</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string-array name="storage_spinner">
+        <item>/storage/emulated/0/قوال خلدها التاريخ</item>
+        <item>/storage/emulated/0/Pictures/أقوال خلدها التاريخ</item>
+        <item>/storage/emulated/0/Download/أقوال خلدها التاريخ</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

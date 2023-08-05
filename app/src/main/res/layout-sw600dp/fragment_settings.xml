@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    tools:context=".Fragments.SettingsFragment">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/info_linear_padding"
+            android:background="@android:color/white">
+            <TextView
+                style="@style/viewParent.headerText"
+                android:text="الاعدادات"
+                android:layout_gravity="end"/>
+            <TextView
+                style="@style/viewParent.headerText.settingsMiniTitle"
+                android:text="معلومات التطبيق"/>
+            <android.support.v7.widget.CardView
+                style="@style/settings_card_style"
+                android:id="@+id/edite_profile"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                app:cardBackgroundColor="#fafafa"
+                app:contentPadding="@dimen/info_card_content_pandding"
+                app:cardPreventCornerOverlap="true"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/edit_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@drawable/ic_edit_profile"
+                        android:text="تغيير معلومات التطبيق"
+                        style="@style/viewParent.headerText.settingsTextIcon"
+                        android:clickable="false"
+                        android:textStyle="bold"
+
+                        />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                style="@style/settings_card_style"
+                android:id="@+id/change_password"
+                android:clickable="true"
+                android:focusable="true"
+
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="#fafafa"
+                app:contentPadding="@dimen/info_card_content_pandding"
+                app:cardPreventCornerOverlap="true"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/change_pass"
+                        style="@style/viewParent.headerText.settingsTextIcon"
+                        android:drawableRight="@drawable/ic_edit_password"
+                        android:clickable="false"
+                        android:text="تغيير كلمة المرور"
+                        android:layout_marginTop="0dp"/>
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                style="@style/viewParent.headerText.settingsMiniTitle"
+                android:text="الاشعارات"
+                android:clickable="true"/>
+            <android.support.v7.widget.CardView
+                style="@style/settings_card_style"
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/notification"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="#fafafa"
+                app:contentPadding="@dimen/info_card_content_pandding"
+                app:cardPreventCornerOverlap="true"
+               >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Switch
+                        android:id="@+id/notification_tv"
+                        style="@style/viewParent.headerText.settingsTextIcon"
+                        android:checked="true"
+                        android:drawableLeft="@drawable/ic_notifications"
+                        android:text="الاشعارات"
+                        android:layout_marginTop="0dp"
+                        />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <TextView
+                style="@style/viewParent.headerText.settingsMiniTitle"
+                android:text="مسار تخزين الصور"
+                android:clickable="true"/>
+            <android.support.v7.widget.CardView
+                style="@style/settings_card_style"
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/Storage"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="#fafafa"
+                app:contentPadding="@dimen/info_card_content_pandding"
+                app:cardPreventCornerOverlap="true"
+               >
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Spinner
+                        android:id="@+id/Storage_tv"
+                        style="@style/settingsText"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/setting_spinner_h"
+                        android:background="@drawable/path_etd_bg"
+                        android:checked="true"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:text="Storage"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                style="@style/viewParent.headerText.settingsMiniTitle"
+                android:text="تسجيل الخروج"/>
+
+            <android.support.v7.widget.CardView
+                style="@style/settings_card_style"
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/log_out"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="#fafafa"
+                app:contentPadding="@dimen/info_card_content_pandding"
+                app:cardPreventCornerOverlap="true"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/viewParent.headerText.settingsTextIcon"
+                        android:drawableRight="@drawable/ic_logout"
+                        android:clickable="false"
+                        android:id="@+id/log_out_tv"
+                        android:text="تسجيل الخروج"
+                        android:layout_marginTop="0dp"/>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                style="@style/settings_card_style"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="#fafafa"
+                app:contentPadding="@dimen/info_card_content_pandding"
+                android:id="@+id/information_card"
+                app:cardPreventCornerOverlap="true"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        style="@style/viewParent.headerText.settingsMiniTitle"
+                        android:text="Https://mini-facts.com"
+                        android:autoLink="all"
+                        android:autoSizeTextType="uniform"
+                        android:drawableLeft="@drawable/ic_language_black_24dp"
+                        android:textColorLink="@color/colorAccent"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

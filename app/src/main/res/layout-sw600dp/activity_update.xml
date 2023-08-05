@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/fullscreendialog"
+    tools:context="Activities.UpdateActivity"
+    android:background="@android:color/white">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/upd_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:foreground="?attr/selectableItemBackground"
+            app:layout_constraintTop_toTopOf="parent"
+            android:theme="@style/toolbartheme"
+            android:background="@color/colorPrimary">
+            <LinearLayout
+                android:id="@+id/table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center|end"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="تحديث أقتباس "
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/toolbar_title"
+                    android:textStyle="bold"
+
+                    />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circleImageView"
+                    android:layout_width="@dimen/profile_iv_w_h"
+                    android:layout_height="@dimen/profile_iv_w_h"
+                    android:layout_margin="@dimen/profile_iv_margin_l_r"
+                    android:src="@drawable/image"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/table" />
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/dialog_add_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/update_fab_margin_top"
+            android:layout_marginBottom="@dimen/update_fab_margin_bottom"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_add_black_24dp"
+            app:backgroundTint="@android:color/white"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toTopOf="@+id/etd_discription"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar"
+            app:layout_constraintTop_toBottomOf="@+id/upd_toolbar" />
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/delete_quote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/update_fab_margin_top"
+            android:layout_marginBottom="@dimen/update_fab_margin_bottom"
+            android:layout_marginEnd="@dimen/update_fab_margin_end"
+
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_delete_black_24dp"
+            app:backgroundTint="@android:color/white"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toTopOf="@+id/etd_discription"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/upd_toolbar" />
+
+        <EditText
+            android:id="@+id/etd_discription"
+
+            android:layout_height="0dp"
+            style="@style/etd_add_disc"
+            android:allowUndo="true"
+            android:background="@drawable/input_quotes_bg"
+            android:hint="تحديث الوصف"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_add_fab" />
+
+        <ImageView
+            android:id="@+id/quotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/qoutes_image_margin_top"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:src="@drawable/ic_add_black_24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etd_discription" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="@dimen/progress_w_h"
+            android:layout_height="@dimen/progress_w_h"
+            android:layout_marginTop="@dimen/progress_margin_top"
+            android:layout_marginEnd="@dimen/progress_margin_end"
+            app:layout_constraintEnd_toStartOf="@+id/delete_quote"
+            app:layout_constraintTop_toBottomOf="@+id/upd_toolbar" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+

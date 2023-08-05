@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="etd_text_size">17dp</dimen>
+    <dimen name="title_text_size">19dp</dimen>
+    <dimen name="title_image_h_d">45sp</dimen>
+    <dimen name="card_text_size">23sp</dimen>
+    <dimen name="ad_text_size">21dp</dimen>
+    <dimen name="sign_btn_text_size">19dp</dimen>
+</resources>

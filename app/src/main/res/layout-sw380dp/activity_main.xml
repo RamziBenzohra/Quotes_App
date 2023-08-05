@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_coordinator"
+    tools:context=".Activities.MainActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true"
+        app:elevation="@dimen/fab_elevation"
+        >
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="serif-monospace"
+                    android:text="أقوال خلدها التاريخ"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/toolbar_title"
+                    android:textStyle="bold" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileImageView"
+                    android:layout_width="@dimen/profile_iv_w_h"
+                    android:layout_height="@dimen/profile_iv_w_h"
+                    android:src="@drawable/image"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/profile_iv_margin_l_r"
+                    android:clickable="true"
+                    android:layout_marginRight="@dimen/profile_iv_margin_l_r"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"/>
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <!---->
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/add_fab_margin_end"
+        android:fitsSystemWindows="true"
+        android:scrollbarStyle="insideInset"
+        android:src="@drawable/ic_add_black_24dp"
+        app:backgroundTint="@android:color/white"
+        app:elevation="@dimen/fab_elevation"
+        android:layout_marginStart="@dimen/add_fab_margin_start"
+        app:layout_anchor="@id/toolbar"
+        app:layout_anchorGravity="bottom|left"
+        app:fabSize="mini"
+        app:layout_scrollFlags="scroll|enterAlways" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/subscription_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:fitsSystemWindows="true"
+        android:focusable="true"
+        android:scrollbarStyle="insideInset"
+        android:layout_marginStart="@dimen/disc_fab_margin_start"
+        app:layout_anchor="@id/toolbar"
+        android:src="@drawable/ic_notifications_none_black_24dp"
+        app:backgroundTint="@android:color/white"
+        app:elevation="@dimen/fab_elevation"
+        app:fabSize="mini"
+        app:layout_anchorGravity="bottom|left"
+        app:layout_scrollFlags="scroll|enterAlways" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        app:layout_behavior="android.support.design.behavior.HideBottomViewOnScrollBehavior"
+        android:gravity="center">
+        <android.support.design.widget.TabLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tabMinWidth="@dimen/tab_min_width"
+            android:layout_gravity="center"
+            app:tabIconTint="@android:color/black"
+            app:tabInlineLabel="true"
+            app:tabIndicatorColor="@color/colorAccent"
+            app:tabRippleColor="@android:color/darker_gray"
+            app:tabMode="fixed"
+            app:tabGravity="center"
+            android:id="@+id/tablayout">
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_person_outline_black_24dp"
+
+                />
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_favorite_border_black_24dp"/>
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_info_outline_black_24dp"/>
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_settings_black_24dp"/>
+
+        </android.support.design.widget.TabLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
